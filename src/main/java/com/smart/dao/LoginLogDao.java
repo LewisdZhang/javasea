@@ -24,4 +24,7 @@ public class LoginLogDao {
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
+	public JdbcTemplate getJdbcTemplate() {
+		return this.jdbcTemplate;
+	}
 }

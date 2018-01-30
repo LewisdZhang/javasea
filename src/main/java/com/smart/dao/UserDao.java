@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import com.smart.domain.User;
 
-@Repository  //注解Dao
+@Repository  
 public class UserDao {
 	private JdbcTemplate jdbcTemplate;
 
