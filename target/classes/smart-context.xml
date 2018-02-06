@@ -16,6 +16,7 @@
        <context:component-scan base-package="com.smart.dao"></context:component-scan>
         <context:component-scan base-package="com.smart.service"/>
         
+
         
           <!-- 配置数据源 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"

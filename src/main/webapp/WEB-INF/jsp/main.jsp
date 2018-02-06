@@ -5,9 +5,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>小春论坛</title>
+<title>个人站点</title>
 </head>
 <body>
-    ${user.userName},欢迎您进入小春论坛，您当前积分为${user.credits};
+    ${user.userName},欢迎您进入个人站点，您当前积分为${user.credits};
 </body>
 </html>

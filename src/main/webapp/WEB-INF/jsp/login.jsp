@@ -1,23 +1,39 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
-<html>
-	<head>
-		<title>小春论坛登录</title>
-	</head>
-	<body>
-		<c:if test="${!empty error}">
-	        <font color="red"><c:out value="${error}" /></font>
-		</c:if>        
-		<form action="<c:url value="loginCheck.html"/>" method="post">
-			用户名：
-			<input type="text" name="userName">
-			<br>
-			密 码：
-			<input type="password" name="password">
-			<br>
-			<input type="submit" value="登录" />
-			<input type="reset" value="重置" />
-		</form>
-	</body>
+
+    <html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>登录界面</title>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/login.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div id="loginpanelwrap">
+            <div class="loginheader">
+                <div class="logintitle">登录</div>
+            </div>
+            <form action = "./loginCheck.html" method="post">
+                <div class="loginform">
+                   <div class="loginform_row">
+                        <label>用户名:</label>
+                        <input type="text" class="loginform_input" name="userName" />
+                    </div>
+                    <div class="loginform_row">
+                        <label>密码:</label>
+                        <input type="password" class="loginform_input" name="password" />
+                    </div>
+                    <div class="loginform_row">
+                        <span class = "returnInfo"></span>
+                        <input type="submit" class="loginform_submit" value="登录" />
+                        <input type="reset" value="重置" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
