@@ -35,5 +35,9 @@
                 </div>
             </form>
         </div>
+		
+		  <%String s = session.getId(); //获取session ID号  %>
+    <p>你的session对象ID是：</p>
+<%=s %>
     </body>
 </html>
