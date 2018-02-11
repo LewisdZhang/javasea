@@ -5,8 +5,8 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>登录界面</title>
-        <script src="js/jquery-3.3.1.js"></script>
-        <script src="js/login.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
 
